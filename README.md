@@ -2,7 +2,6 @@ DNS Latency Profiler
 
 Overview
 The aim is to measure the latency of DNS servers of top ten domains ranked by Alexa in resolving a random query. This is achieved by periodically flooding the nameservers with random queries and measuring the latency in receiving a response. 
-
 Design
 The system measures the latency for only the Authoritative Answers (AA). It is achieved through the following steps.
 1. For each of the domains, DNS query is made for its nameservers. 
