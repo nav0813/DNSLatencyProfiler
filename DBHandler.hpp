@@ -8,13 +8,15 @@
 #ifndef DBHANDLER_HPP_
 #define DBHANDLER_HPP_
 
-
-#include <mysql++.h>
-
+//standard library includes
 #include <string>
 #include <sstream>
 #include <cmath>
 
+//library includes
+#include <mysql++.h>
+
+//namespace includes
 #include "QueryResult.hpp"
 #include "Utils.hpp"
 
