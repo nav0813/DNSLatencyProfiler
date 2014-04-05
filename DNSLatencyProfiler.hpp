@@ -8,14 +8,18 @@
 #ifndef DNSLATENCYPROFILER_HPP_
 #define DNSLATENCYPROFILER_HPP_
 
+//standard library includes
+#include <string>
+#include <list>
+
+//library includes
+#include <boost/filesystem.hpp>
+
+//namespace includes
 #include "QueryExecutor.hpp"
 #include "DBHandler.hpp"
 #include "TimeTrigger.hpp"
 #include "Utils.hpp"
-
-#include <string>
-#include <list>
-#include <boost/filesystem.hpp>
 
 using std::string;
 using std::list;
