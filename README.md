@@ -20,48 +20,29 @@ The database has two tables - TimeSeries and Aggregates. The results of every va
 Table - TimeSeries
 
 +------------+-------------+------+-----+---------+-------+
-
 | Field      | Type        | Null | Key | Default | Extra |
-
 +------------+-------------+------+-----+---------+-------+
-
 | Domain     | varchar(20) | NO   |     | NULL    |       |
-
 | Query      | varchar(30) | NO   |     | NULL    |       |
-
 | NameServer | varchar(16) | NO   |     | NULL    |       |
-
 | Timestamp  | int(11)     | NO   |     | NULL    |       |
-
 | QueryTime  | int(11)     | YES  |     | NULL    |       |
-
 +------------+-------------+------+-----+---------+-------+
 
 
 Table - Aggregates
 
 +--------------+-------------+------+-----+---------+-------+
-
 | Field        | Type        | Null | Key | Default | Extra |
-
 +--------------+-------------+------+-----+---------+-------+
-
 | AlexaRank    | int(11)     | NO   | PRI | NULL    |       |
-
 | Domain       | varchar(20) | NO   |     | NULL    |       |
-
 | Queries      | int(11)     | YES  |     | NULL    |       |
-
 | AvgQueryTime | int(11)     | NO   |     | NULL    |       |
-
 | StdDeviation | int(11)     | NO   |     | NULL    |       |
-
 | FirstQuery   | int(11)     | NO   |     | NULL    |       |
-
 | LastQuery    | int(11)     | NO   |     | NULL    |       |
-
 +--------------+-------------+------+-----+---------+-------+
-
 
 
 Pre-requisites libraries for building the system
