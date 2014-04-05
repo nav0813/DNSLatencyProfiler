@@ -18,28 +18,50 @@ Database Schema
 The database has two tables - TimeSeries and Aggregates. The results of every valid reply is stored in TimeSeries and statistical data for each domain i.e. average query time, standard deviation of query times, timestamp of first and last query are stored in Aggregates. The schema of both the tables are below.
 
 Table - TimeSeries
-+------------+-------------+------+-----+---------+-------+
-| Field      | Type        | Null | Key | Default | Extra |
-+------------+-------------+------+-----+---------+-------+
-| Domain     | varchar(20) | NO   |     | NULL    |       |
-| Query      | varchar(30) | NO   |     | NULL    |       |
-| NameServer | varchar(16) | NO   |     | NULL    |       |
-| Timestamp  | int(11)     | NO   |     | NULL    |       |
-| QueryTime  | int(11)     | YES  |     | NULL    |       |
+
 +------------+-------------+------+-----+---------+-------+
 
+| Field      | Type        | Null | Key | Default | Extra |
+
++------------+-------------+------+-----+---------+-------+
+
+| Domain     | varchar(20) | NO   |     | NULL    |       |
+
+| Query      | varchar(30) | NO   |     | NULL    |       |
+
+| NameServer | varchar(16) | NO   |     | NULL    |       |
+
+| Timestamp  | int(11)     | NO   |     | NULL    |       |
+
+| QueryTime  | int(11)     | YES  |     | NULL    |       |
+
++------------+-------------+------+-----+---------+-------+
+
+
 Table - Aggregates
+
 +--------------+-------------+------+-----+---------+-------+
+
 | Field        | Type        | Null | Key | Default | Extra |
+
 +--------------+-------------+------+-----+---------+-------+
+
 | AlexaRank    | int(11)     | NO   | PRI | NULL    |       |
+
 | Domain       | varchar(20) | NO   |     | NULL    |       |
+
 | Queries      | int(11)     | YES  |     | NULL    |       |
+
 | AvgQueryTime | int(11)     | NO   |     | NULL    |       |
+
 | StdDeviation | int(11)     | NO   |     | NULL    |       |
+
 | FirstQuery   | int(11)     | NO   |     | NULL    |       |
+
 | LastQuery    | int(11)     | NO   |     | NULL    |       |
+
 +--------------+-------------+------+-----+---------+-------+
+
 
 
 Pre-requisites libraries for building the system
