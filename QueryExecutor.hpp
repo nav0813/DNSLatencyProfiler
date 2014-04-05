@@ -8,17 +8,19 @@
 #ifndef QUERYEXECUTOR_HPP_
 #define QUERYEXECUTOR_HPP_
 
+#include <string>
+#include <list>
+
 //LDNS specific headers
 #include "config.h"
 #include <ldns/ldns.h>
 
+//namespace includes
 #include "Utils.hpp"
 #include "QueryResult.hpp"
 #include "DBHandler.hpp"
 #include "Executor.hpp"
 
-#include <string>
-#include <list>
 using std::string;
 using std::list;
 
