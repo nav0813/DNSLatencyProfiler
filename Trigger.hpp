@@ -8,9 +8,12 @@
 #ifndef TRIGGER_HPP_
 #define TRIGGER_HPP_
 
+//standard library includes
+#include <list>
+
+//namespace includes
 #include "Executor.hpp"
 
-#include <list>
 using std::list;
 
 namespace DNSProfiler {
