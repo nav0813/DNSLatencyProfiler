@@ -8,9 +8,12 @@
 #ifndef TIMETRIGGER_HPP_
 #define TIMETRIGGER_HPP_
 
-#include "Trigger.hpp"
+//standard library includes
 #include <iostream>
 #include <unistd.h>
+
+//namespace includes
+#include "Trigger.hpp"
 
 using std::cout;
 
