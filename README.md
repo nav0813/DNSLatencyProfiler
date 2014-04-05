@@ -1,5 +1,5 @@
 DNS Latency Profiler
-
+----------------------------------------------
 Overview
 -------------
 The aim is to measure the latency of DNS servers of top ten domains ranked by Alexa in resolving a random query. This is achieved by periodically flooding the nameservers with random queries and measuring the latency in receiving a response. 
@@ -98,7 +98,7 @@ A python script named - 'getLatestTopTenAlexa.py' extracts the top ten domains f
   python getLatestTopTenAlexa.pt > latestTopTen
 
 
-Latency logs at MySQL
-
+Query results database
+-------------------------------------------
 As mentioned early, the query resolution results are stored in the tables - TimeSeries, and Aggregates. 'Snapshots' folder of the repository contains the snapshots of tables.
 
