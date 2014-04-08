@@ -86,11 +86,11 @@ Running the program
 1. The list of top ten domains is required to be saved in a file, with each line containing one domain and other text. The domains listed in the Challenge comes along with the repository as 'topdomains.txt'. Alternative solution is explained in the nest section.
 2. Start program following the command below
 
-    ./DNSLatencyProfiler --user <MySQL user name> --passwd <MySQL password> --database <database name> --file <file containing the top domains> --freq <frequency at which profiling repeats, in microseconds>
+    ./DNSLatencyProfiler --user 'MySQL user name' --passwd 'MySQL password' --database 'database name' --file 'file containing the top domains' --freq 'frequency at which profiling repeats, in microseconds'
 
     ./DNSLatencyProfiler --help -> to get help in giving the command line options
     
-In the ideal case, the program runs continuously until stopped. In case of errors like not being able to open the file containing the top domains or any database problems, the program halts. All the errors encountered in the execution are logged in error log files that are named as 'ErrorLog-<TimeStamp>'
+In the ideal case, the program runs continuously until stopped. In case of errors like not being able to open the file containing the top domains or any database problems, the program halts. All the errors encountered in the execution are logged in error log files that are named as ErrorLog-'TimeStamp'
 
 Note: Different databases should be used for different sets of top domains. The password specified in the program option is not hidden.
 
